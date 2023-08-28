@@ -16,7 +16,7 @@ include_directories(${Boost_INCLUDE_DIRS})
 
 find_package(PythonLibs REQUIRED)
 
-ADD_LIBRARY(cpp-docker-isolation-provider STATIC
+add_executable(cpp-docker-isolation-provider
         httplib.h
         docker-isolation-provider.cpp
 )
